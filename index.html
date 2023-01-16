@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>calculadora</title>
+    <link rel="stylesheet" href="css/style.css">
+    <meta charset="utf-8"/>
+  </head>
+  <body>
+    <script src="scripts/scripts.js" defer></script>
+    <main>
+      <div>
+        <div>
+          <div id="screen_history"></div>
+          <div id="screen">0</div>
+          <section id="buttons">
+            <div id="numbers">
+              <button class="numbers" onclick="change_Num(1)">1</button>
+              <button class="numbers" onclick="change_Num(2)">2</button>
+              <button class="numbers" onclick="change_Num(3)">3</button>
+              <button class="numbers" onclick="change_Num(4)">4</button>
+              <button class="numbers" onclick="change_Num(5)">5</button>
+              <button class="numbers" onclick="change_Num(6)">6</button>
+              <button class="numbers" onclick="change_Num(7)">7</button>
+              <button class="numbers" onclick="change_Num(8)">8</button>
+              <button class="numbers" onclick="change_Num(9)">9</button>
+              <button class="numbers" onclick="change_Num(0)">0</button>
+              <button class="numbers" onclick="change_Num('.')">.</button>
+              <button class="numbers" id="equal" onclick="equal()">=</button>
+            </div>
+            <div id="opt">
+              <button id="sum" class="opt" onclick="change_Num('+')">+</button>
+              <button id="minus" class="opt" onclick="change_Num('-')">-</button>
+              <button id="division" class="opt" onclick="change_Num('/')">&divide</button>
+              <button id="times" class="opt" onclick="change_Num('x')">x</button>
+              <button id="clear" class="opt" onclick="change_Num('C')">C</button>
+              <button id="(" class="opt" onclick="change_Num('(')">(</button>
+              <button id=")" class="opt" onclick="change_Num(')')">)</button>
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
